@@ -13,7 +13,7 @@
     <!-- Popular badge -->
     @if ($isPopuler)
     <p class="px-[14px] py-2 rounded-xl bg-butter-yellow text-dark-indigo font-semibold text-sm absolute top-5 right-5">
-        Popular
+     &#9733;&#9733;&#9733;&#9733;&#9733;
     </p>
     @endif
    
@@ -30,7 +30,7 @@
                 </p>
             </div>
             <p class="text-xl font-semibold text-secondary">
-                {{number_format($price) }}
+              $  {{number_format($price) }} 
             </p>
         </div>
         <p

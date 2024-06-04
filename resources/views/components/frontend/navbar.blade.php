@@ -4,7 +4,7 @@
         <div class="flex items-center justify-between">
             <!-- LOGO -->
             <a href="{{ url('/') }}">
-                <img src="{{ asset('assets/svgs/logo-type.svg') }}" alt="tickety-assets" />
+                <img src="{{ asset('assets/images/Frame 1.png') }}" alt="tickety-assets" />
             </a>
             <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
             <div class="block lg:hidden">

@@ -4,20 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Ticket extends Model
 {
-    use HasFactory , SoftDeletes;
+    use HasFactory;
 
     protected $fillable = [
+        'event_id',
         'name',
         'price',
-        'quantity',
-        'max_buy'
+        'quantity', // Tambahkan kolom quantity
+        'max_buy',  // Tambahkan kolom max_buy
+        // tambahkan field lain yang diperlukan
     ];
-
-    //relation to event
     public function event()
     {
       return $this->belongsTo(Event::class);
